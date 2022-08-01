@@ -61,10 +61,10 @@ body #wishTitle {
             justify-content: space-evenly !important;
   }
   body .timer #hour {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   body .timer #second {
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
