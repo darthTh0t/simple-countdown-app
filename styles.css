@@ -82,4 +82,8 @@ body .timer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+body #final-message {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,10 @@
+const timerDiv = document.querySelector('.timer');
 const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
 const wishTitle = document.querySelector('#wishTitle');
 const specialWish = document.querySelector('#specialWish');
+const finalMessage = document.querySelector('#final-message');
 
 const second = 1000;
 const minute = second * 60;
@@ -20,7 +22,7 @@ function setTime() {
 
     hours.innerText = specialHour < 10 ? "0" + specialHour : specialHour;
     minutes.innerText = specialMinute < 10 ? "0" + specialMinute : specialMinute;
-    seconds.innerText = specialSecond;
+    seconds.innerText = specialSecond < 10 ? "0" + specialSecond : specialSecond;
 
     console.log(specialTime);
 
@@ -33,6 +35,9 @@ function setTime() {
         hours.innerText = 00;
         minutes.innerText = 00;
         seconds.innerText = 00;
+        timerDiv.classList.add('animate__animated', 'animate__bounceOut');
+        finalMessage.style.display = 'block';
+        finalMessage.classList.add('animate__animated', 'animate__bounceInUp');
         return
     }
 }
