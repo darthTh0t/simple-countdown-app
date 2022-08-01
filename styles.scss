@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    .bg-image{
+       position: absolute;
+       z-index: -1;
+       opacity: 0.5;
+       transform: scale(0.4);
+       overflow: hidden;
+    }
+    height: 100vh;
+    font-family: 'Righteous', sans-serif;
+    font-size: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #wishTitle{
+        padding-bottom: 30px;
+    }
+    @media screen and (max-width: 500px) {
+        overflow: hidden;
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 30px;
+        }
+        .timer{
+            justify-content: space-evenly !important;
+        }
+    }
+    .timer{
+        margin-top: 40px;
+        width: 30rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
