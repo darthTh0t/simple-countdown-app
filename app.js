@@ -9,7 +9,7 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
 
-const birthdayTime = new Date("Aug 01 2022 18:36:00");
+const birthdayTime = new Date("Aug 02 2022 00:00:00");
 
 function setTime() {
     const currentTime = new Date;
