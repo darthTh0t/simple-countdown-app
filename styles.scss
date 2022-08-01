@@ -44,7 +44,13 @@ body{
             font-size: 30px;
         }
         .timer{
-            justify-content: space-between !important;
+            justify-content: space-evenly !important;
+            #hour{
+                padding-left: 10px;
+            }
+            #second{
+                padding-right: 10px;
+            }
         }
     }
     .timer{
