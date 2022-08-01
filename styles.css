@@ -38,6 +38,10 @@ body .bg-image {
   width: auto;
 }
 
+body h4 {
+  font-size: 25px;
+}
+
 body #wishTitle {
   padding-bottom: 30px;
 }
